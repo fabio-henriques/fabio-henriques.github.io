@@ -1,0 +1,834 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex--sa{
+    justify-content: space-around;
+}
+.flex--sb{
+    justify-content: space-between;
+}
+.flex--c{
+    justify-content: center;
+}
+.flex--ac{
+    align-items: center;
+}
+.flex--as{
+    align-items: stretch;
+}
+
+header{
+    background: #343C4F;
+}
+
+/*-------------------------------scroll top------------------------------*/
+
+.scroll__top__arrow{
+    border-radius: 52px;
+    width: 52px;
+    height: 52px;
+    background: rgba(0, 214, 70, 1);
+    position: fixed;
+    right: 25px;
+    z-index: 100;
+    text-align: center;
+    bottom: 65px;
+    display: none;
+}
+
+.scroll__top__arrow i{
+    line-height: 52px;
+    font-size: 19px;
+    color: white;
+}
+
+
+
+
+
+
+/*-------------------------------Nav------------------------------*/
+
+.nav{
+    
+}
+
+.nav__list{
+    padding-left: 0;
+    list-style: none; 
+}
+
+.nav__intem{
+    margin: 0 10px;
+}
+
+.nav__link{
+    color: #fff;
+    transition: all .32s;
+    font-weight: 400;
+    font-size: .9em;
+    text-decoration: none;
+}
+
+.nav__link:hover{
+    color: #949EAA;
+}
+
+.nav__link--active{
+    color: #64BF4E;
+}
+
+.site-header__logo{
+    width: 39px;
+}
+
+
+
+/*-------------------------------Home------------------------------*/
+
+.home{
+    background: url(../img/fabio-henriques.jpg);
+    padding: 175px 0 1000px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.home::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: rgba(144, 168, 185, .6);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.home__title{
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/*-------------------------------Skills------------------------------*/
+
+.skills{
+    background: url(../img/web-design.jpg);
+    padding: 175px 0 200px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.skills::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, .6);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.skills__callout{
+    background: #343C4F;
+    color: white;
+    padding: 104px 50px 120px;
+    width: 600px;
+    position: absolute;
+    left: 53%;
+    margin-left: -350px;
+    top: -290px;
+}
+
+.cv{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background: #394257;
+    position: relative;
+    margin: 0 auto;
+}
+
+.cv__image{
+    width: 45%;
+    margin: 0 auto;
+    top: 40px;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.skills__button{
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    margin-top: 50px;
+    background: transparent;
+    border: 1px solid rgba(0, 214, 70, 1);
+    transition: all .6s;
+    padding: 14px 0 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.skills__button:hover{
+    background: rgba(0, 214, 70, 1);
+}
+
+.skills__margin{
+    margin-top: 300px;
+}
+
+.skills__title{
+    text-align: center;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 50px;
+    letter-spacing: 0.1em;
+}
+
+.skills__subtitle{
+    text-align: center;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 100px;
+    letter-spacing: 0.1em;
+}
+
+.col-centered {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:50px;
+    width:100%;
+    background:#eee;
+    height:20px;
+    border-radius:3px;
+    transition: all 0.4s linear;
+}
+
+.skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    font-weight:bold;
+    font-size:13px;
+    color:#fff;
+    background: rgba(0, 214, 70, 1);
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0 20px;
+    height:20px;
+    line-height:20px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+    height:20px;
+    width:0px;
+    background: rgba(0, 214, 70, 1);
+    border-radius:3px;
+    float: left;
+}
+
+.containers {
+    min-height: 100%;
+    height: 100vh;
+}
+
+.skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:11px;
+    height:20px;
+    line-height:20px;
+    color:#444;
+    color:rgba(0, 0, 0, 0.4);
+}
+
+/*-------------------------------Portfolio------------------------------*/
+
+.portfolio{
+    background: #4E5565;
+    padding: 175px 0 291px;
+}
+
+.portfolio__title{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.portfolio__subtitle{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    letter-spacing: 0.1em;
+}
+
+.portfolio__subtitle__link{
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+.portfolio__works{
+    width: 33.3333333333%;
+    position: relative;
+}
+
+.portfolio__works__page{
+    width: 33.3333333333%;
+    position: relative;
+}
+
+.portfolio__works__image{
+    width: 100%;
+}
+
+.portfolio__works__link::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: all .5s;
+}
+
+.portfolio__works__link:hover::after{
+    background: rgba(0, 0, 0, .35);
+}
+
+.portfolio__page{
+    background: #343C4F;
+}
+
+/*-------------------------------Contacts------------------------------*/
+
+.contacts{
+    background: url(../img/code-screen.jpg); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contacts__callout{
+    background: #343C4F;
+    width: 20%;
+    position: relative;
+    margin: 0 auto; 
+    top: -124px;
+    padding: 55px;
+}
+
+.contacts__callout__image{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*-------------------------------Footer------------------------------*/
+
+footer{
+    background: #343C4F;
+}
+
+.contact__title{
+    margin-top: 0;
+    padding-top: 20px;
+    color: white;
+}
+
+.contact__copy{
+    transition: all .22s;
+}
+
+.contact__copy i{
+    font-size: 1.2em; 
+    color: rgba(0, 214, 70, 1);
+    margin: 0 20px 0 40px;
+}
+
+.contact__copy a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact__copy a:hover{
+    color: rgba(0, 214, 70, 1);
+}
+
+.sub__footer{
+    border-top: 1px solid rgba(27, 31, 41, .3);
+}
+
+.contact__copyright{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact__copyright__portfolio{
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    padding: 50px 0 50px;
+}
+
+.contact__portfolio__logo{
+    width: 39px;
+}
+
+.social{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.social__icons__link{
+    background: rgba(0, 214, 70, 1);
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 10px 24px;
+    border-radius: 100%;
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    
+    .home{
+        background: url(../img/fabio-henriques.jpg);
+        padding: 175px 0 700px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+}
+    
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    
+   
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+    .skills__callout{
+        width: 100%;
+        padding: 45px 0 50px;
+        position: relative;
+        left: 0;
+        margin: 0 auto;
+        top: -380px;
+    }
+
+    .cv{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .skills__margin{
+        margin-top: 0; 
+    }
+
+    .skills__title{
+        padding-top: 0;
+    }
+
+    .col-centered{
+        width: 100%;
+    }
+
+    .contacts__callout{
+        width: 34%;
+    }
+
+    .portfolio__works__page{
+        width: 50%;
+    }
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    
+    .skills__callout{
+        width: 100%;
+        padding: 45px 0 50px;
+        position: relative;
+        left: 0;
+        margin: 0 auto;
+        top: -380px;
+    }
+
+    .cv{
+        width: 200px;
+        height: 200px;
+    }
+
+    .portfolio__works{
+        width: 100%;
+    }
+
+    .contacts__callout{
+        width: 60%;
+    }
+
+    .portfolio__works__page{
+        width: 100%;
+    }
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+  
+  .site-header__link{
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .contact__copy a{
+    font-size: .9em;
+  }
+    
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
