@@ -609,6 +609,18 @@ footer{
     .portfolio__works__page{
         width: 50%;
     }
+    
+    .home{
+        background-attachment: scroll;
+    }
+
+    .skills{
+        background-attachment: scroll;
+    }
+
+    .contacts{
+        background-attachment: scroll;
+    }
 
 }
 
