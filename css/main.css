@@ -649,7 +649,10 @@ footer{
     .contacts{
         background-attachment: scroll;
     }
-
+    
+    .project__img{
+        width: 50%;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
@@ -678,6 +681,10 @@ footer{
     }
 
     .portfolio__works__page{
+        width: 100%;
+    }
+    
+    .project__img{
         width: 100%;
     }
 
