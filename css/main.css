@@ -550,6 +550,34 @@ footer{
     border-radius: 100%;
 }
 
+/*-------------------------------projects------------------------------*/
+
+.project{
+    background: #4E5565;
+    flex-direction: row-reverse;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.project__img{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.project__title{
+    color: white;
+}
+
+.project__description{
+    color: white;
+}
+
+.project__description__link{
+    color: white;
+    text-decoration: underline;
+
+}
+
 /*==========  Non-Mobile First Method  ==========*/
 
 /* Large Devices, Wide Screens */
